@@ -41,7 +41,7 @@ flowchart LR
 ```
 
 | Task | Priority | Waits on |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | serialTask | 2 | vTaskDelay 20 ms |
 | timeTask | 2 | xQueueReceive (blocks until a command arrives) |
 | oledTask | 1 | vTaskDelayUntil 100 ms |
